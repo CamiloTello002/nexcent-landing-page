@@ -1,0 +1,10 @@
+@layer layouts {
+	.header {
+		display: flex;
+		max-width: 1500px;
+		margin-inline: auto;
+		padding: 1rem;
+	}
+}
+
+@layer components {}
