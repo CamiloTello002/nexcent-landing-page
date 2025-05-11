@@ -1,0 +1,23 @@
+@layer theme {
+	:root {
+		--black: #263238;
+		--dark-grey: #4D4D4D;
+		--grey: #717171;
+		--light-grey: #89839E;
+		--grey-blue: #ABBED1;
+		--silver: #F5F7FA;
+		--white: #FFF;
+
+		--primary-color: #28CB8B;
+		--secondary-color: #263238;
+		--info-color: #2194F3;
+
+		--primary-color-shade-1: #43A046;
+		--primary-color-shade-2: #388E3B;
+		--primary-color-shade-3: #237D31;
+		--primary-color-shade-4: #1B5E1F;
+		--primary-color-shade-5: #103E13;
+
+		--primary-color-tint-1: #66BB69;
+	}
+}
