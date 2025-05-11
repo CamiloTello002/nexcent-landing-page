@@ -1,4 +1,4 @@
-@layer reset;
+@layer reset, base, layouts, components;
 
 @import url('./header.css');
 
@@ -63,5 +63,11 @@
 	button {
 		all: unset;
 		cursor: pointer;
+	}
+}
+
+@layer base {
+	body {
+		font-family: Inter;
 	}
 }
