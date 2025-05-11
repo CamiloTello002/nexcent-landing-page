@@ -1,5 +1,6 @@
 @layer reset, base, layouts, components;
 
+@import url('./theme.css');
 @import url('./header.css');
 
 @layer reset {
@@ -64,10 +65,34 @@
 		all: unset;
 		cursor: pointer;
 	}
+
+	a {
+		text-decoration: none;
+		color: inherit;
+	}
 }
 
 @layer base {
 	body {
 		font-family: Inter;
+	}
+}
+
+@layer components {
+	.btn {
+		padding-block: 1rem;
+		padding-inline: 2rem;
+		display: flex;
+		align-items: center;
+		gap: .5rem;
+		border-radius: .5rem;
+		background-color: var(--primary-color);
+		color: var(--white);
+
+		svg {
+			path {
+				stroke: var(--white);
+			}
+		}
 	}
 }
