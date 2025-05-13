@@ -10,7 +10,7 @@
 		display: flex;
 		max-width: 1500px;
 		margin-inline: auto;
-		padding: 1rem;
+		padding: var(--header-padding);
 		justify-content: space-between;
 		align-items: center;
 	}
