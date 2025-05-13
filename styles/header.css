@@ -12,6 +12,10 @@
 		display: flex;
 		gap: 1.5rem;
 		align-items: center;
+
+		@media (width <=820px) {
+			display: none;
+		}
 	}
 
 	.header-nav {
@@ -21,6 +25,7 @@
 }
 
 @layer components {
+
 	.brand-logo {
 		display: flex;
 		gap: .5rem;
@@ -32,5 +37,21 @@
 		svg {
 			height: 1rem;
 		}
+	}
+
+	.hamburger-menu {
+		display: flex;
+		flex-direction: column;
+		gap: var(--hamburger-gap);
+	}
+
+	.hamburger-menu::before,
+	.hamburger-menu::after,
+	.hamburger-menu input {
+		content: "";
+		width: var(--bar-width);
+		height: var(--bar-height);
+		background-color: var(--black);
+		border-radius: 9999px;
 	}
 }
