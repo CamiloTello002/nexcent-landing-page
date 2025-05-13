@@ -53,6 +53,12 @@
 		height: var(--bar-height);
 		background-color: var(--black);
 		border-radius: 9999px;
+	}
+
+	.hamburger-menu input {
 		appearance: none;
+		padding: 0;
+		margin: 0;
+		outline: none;
 	}
 }
