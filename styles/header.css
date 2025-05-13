@@ -35,6 +35,11 @@
 	}
 
 	.sidebar {
+		display: flex;
+		flex-direction: column;
+		gap: 1.5rem;
+		align-items: flex-end;
+
 		position: absolute;
 		font-size: inherit;
 		padding-top: 5.5rem;
@@ -48,6 +53,11 @@
 		translate: 101%;
 		transition: translate var(--hamburger-menu-animation-timing);
 		transition-behavior: allow-discrete;
+
+		a,
+		nav {
+			color: inherit;
+		}
 
 		@media (width >=820px) {
 			display: none;
