@@ -1,3 +1,10 @@
+@layer base {
+	:root {
+		--header-padding: 1rem;
+		--hamburger-menu-animation-timing: 200ms ease-in-out;
+	}
+}
+
 @layer layouts {
 	.header {
 		display: flex;
