@@ -33,6 +33,27 @@
 		display: contents;
 		color: var(--dark-grey);
 	}
+
+	.sidebar {
+		position: absolute;
+		font-size: inherit;
+		padding-top: 10rem;
+		right: 0;
+		top: 0;
+		background-color: var(--black);
+		color: var(--white);
+		min-height: 100vh;
+		padding-inline: 1rem;
+
+		translate: 101%;
+		transition: translate var(--hamburger-menu-animation-timing);
+		transition-behavior: allow-discrete;
+	}
+
+	.hamburger-menu:has(input:checked)+.sidebar {
+		translate: 0;
+	}
+
 }
 
 @layer components {
@@ -101,5 +122,15 @@
 		rotate: -45deg;
 		width: var(--x-width);
 		translate: 0 calc(var(--bar-height) / 2);
+	}
+
+	.hamburger-menu:has(input:checked) {
+		&::after {
+			background-color: var(--white);
+		}
+
+		&::before {
+			background-color: var(--white);
+		}
 	}
 }
