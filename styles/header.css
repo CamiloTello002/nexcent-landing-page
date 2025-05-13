@@ -64,6 +64,7 @@
 		background-color: var(--black);
 		border-radius: 9999px;
 		transition: opacity var(--hamburger-menu-animation-timing), width var(--hamburger-menu-animation-timing);
+		transform-origin: left center;
 	}
 
 	.hamburger-menu input {
