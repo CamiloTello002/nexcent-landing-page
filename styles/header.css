@@ -37,7 +37,7 @@
 	.sidebar {
 		position: absolute;
 		font-size: inherit;
-		padding-top: 10rem;
+		padding-top: 5.5rem;
 		right: 0;
 		top: 0;
 		background-color: var(--black);
@@ -48,6 +48,10 @@
 		translate: 101%;
 		transition: translate var(--hamburger-menu-animation-timing);
 		transition-behavior: allow-discrete;
+
+		@media (width >=820px) {
+			display: none;
+		}
 	}
 
 	.hamburger-menu:has(input:checked)+.sidebar {
@@ -79,6 +83,10 @@
 		gap: var(--hamburger-gap);
 		z-index: 100;
 		cursor: pointer;
+
+		@media (width >=820px) {
+			display: none;
+		}
 	}
 
 	.hamburger-menu::before,
