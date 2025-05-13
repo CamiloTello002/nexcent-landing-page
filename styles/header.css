@@ -53,5 +53,6 @@
 		height: var(--bar-height);
 		background-color: var(--black);
 		border-radius: 9999px;
+		appearance: none;
 	}
 }
