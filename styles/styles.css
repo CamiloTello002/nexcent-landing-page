@@ -74,7 +74,6 @@
 
 @layer base {
 	body {
-		--hamburguer-gap: 6px;
 		font-family: Inter;
 	}
 }
