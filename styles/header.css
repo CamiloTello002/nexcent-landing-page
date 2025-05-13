@@ -70,5 +70,8 @@
 		pointer-events: none;
 	}
 
+	.hamburger-menu input:checked {
+		opacity: 0;
+		width: 0;
 	}
 }
