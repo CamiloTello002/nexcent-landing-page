@@ -5,6 +5,7 @@
 		--hamburger-gap: 1.5rem;
 		--header-padding: 1rem;
 		--hamburger-menu-animation-timing: 200ms ease-in-out;
+		--hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
 	}
 }
 
