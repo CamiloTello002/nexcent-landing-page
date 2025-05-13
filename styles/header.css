@@ -2,7 +2,7 @@
 	:root {
 		--bar-width: 60px;
 		--bar-height: 8px;
-		--hamburger-gap: 1.5rem;
+		--hamburger-gap: .5rem;
 		--header-padding: 1rem;
 		--hamburger-menu-animation-timing: 200ms ease-in-out;
 		--hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
@@ -21,7 +21,7 @@
 
 	.header-buttons {
 		display: flex;
-		gap: var(--hamburger-gap);
+		gap: 1.5rem;
 		align-items: center;
 
 		@media (width <=820px) {
@@ -58,12 +58,12 @@
 		gap: var(--hamburger-gap);
 		z-index: 100;
 		cursor: pointer;
-		gap: .5rem;
 	}
 
 	.hamburger-menu::before,
 	.hamburger-menu::after,
 	.hamburger-menu input {
+		display: block;
 		content: "";
 		width: var(--bar-width);
 		height: var(--bar-height);
@@ -88,9 +88,11 @@
 
 	.hamburger-menu:has(input:checked)::before {
 		rotate: 45deg;
+		width: var(--x-width);
 	}
 
 	.hamburger-menu:has(input:checked)::after {
 		rotate: -45deg;
+		width: var(--x-width);
 	}
 }
