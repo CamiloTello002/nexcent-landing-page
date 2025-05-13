@@ -75,6 +75,7 @@
 @layer base {
 	body {
 		font-family: Inter;
+		overflow-x: hidden;
 	}
 }
 
