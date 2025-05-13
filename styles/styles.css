@@ -74,6 +74,9 @@
 
 @layer base {
 	body {
+		--bar-width: 60px;
+		--bar-height: 8px;
+		--hamburguer-gap: 6px;
 		font-family: Inter;
 	}
 }
