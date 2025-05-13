@@ -79,4 +79,12 @@
 		opacity: 0;
 		width: 0;
 	}
+
+	.hamburger-menu:has(input:checked)::before {
+		rotate: 45deg;
+	}
+
+	.hamburger-menu:has(input:checked)::after {
+		rotate: -45deg;
+	}
 }
