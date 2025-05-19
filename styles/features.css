@@ -1,0 +1,36 @@
+@layer layouts {
+	.features {
+		max-width: var(--maximum-width);
+		margin-inline: auto;
+		display: flex;
+		flex-direction: column;
+		gap: 1.5rem;
+	}
+
+	.clients {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+		align-items: center;
+		padding-block: 1rem;
+		padding-inline: 2rem;
+	}
+}
+
+@layer components {
+	.clients-logos {
+		width: 100%;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		gap: 1rem;
+	}
+
+	.clients-title {
+		font-size: 2rem;
+		font-weight: 700;
+	}
+
+	.clients-text {
+		color: var(--grey);
+	}
+}
