@@ -1,7 +1,7 @@
 @layer base {
 	:root {
-		--bar-width: 60px;
-		--bar-height: 8px;
+		--bar-width: 2.5rem;
+		--bar-height: .2rem;
 		--hamburger-gap: .5rem;
 		--header-padding: 1rem;
 		--hamburger-menu-animation-timing: 200ms ease-in-out;
