@@ -1,0 +1,20 @@
+@layer layouts {
+    .hero-wrapper {
+        height: 40vh;
+        background-color: var(--silver);
+    }
+
+    .hero {
+        max-width: var(--maximum-width);
+        margin-inline: auto;
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+}
+
+@layer components {
+    .hero-image {
+        height: 100%;
+    }
+}
