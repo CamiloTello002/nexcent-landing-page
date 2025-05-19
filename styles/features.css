@@ -4,7 +4,7 @@
 		margin-inline: auto;
 		display: flex;
 		flex-direction: column;
-		gap: 1.5rem;
+		gap: 2rem;
 	}
 
 	.clients {
@@ -14,6 +14,30 @@
 		align-items: center;
 		padding-block: 1rem;
 		padding-inline: 2rem;
+
+		@media (width <=500px) {
+			padding-block: .5rem;
+			padding-inline: 1rem;
+		}
+	}
+
+	.target-audience {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+		align-items: center;
+		padding-inline: 1.5rem;
+
+		@media (width <=500px) {
+			padding-inline: .5rem;
+		}
+	}
+
+	.target-audience-list {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 1rem;
+		width: 100%;
 	}
 }
 
@@ -21,16 +45,54 @@
 	.clients-logos {
 		width: 100%;
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-		gap: 1rem;
+		grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+		gap: 2rem;
+		align-items: center;
+		justify-items: center;
 	}
 
 	.clients-title {
 		font-size: 2rem;
 		font-weight: 700;
+		text-align: center;
+		color: var(--dark-grey);
 	}
 
 	.clients-text {
+		color: var(--grey);
+		text-align: center;
+	}
+
+	.target-audience-element {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: .5rem;
+
+		h3 {
+			font-size: 1.5rem;
+			text-align: center;
+			color: var(--dark-grey);
+		}
+
+		p {
+			text-align: center;
+			color: var(--grey);
+		}
+
+		svg {
+			height: 4rem;
+		}
+	}
+
+	.target-audience-title {
+		font-size: 2rem;
+		color: var(--dark-grey);
+		font-weight: 600;
+		text-align: center;
+	}
+
+	.target-audience-text {
 		color: var(--grey);
 	}
 }
