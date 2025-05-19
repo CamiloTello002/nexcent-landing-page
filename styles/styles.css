@@ -78,6 +78,7 @@
 	body {
 		font-family: Inter;
 		overflow-x: hidden;
+		color: var(--black);
 	}
 }
 
