@@ -79,6 +79,7 @@
 		font-family: Inter;
 		overflow-x: hidden;
 		color: var(--black);
+		--maximum-width: 1500px;
 	}
 }
 
