@@ -61,6 +61,10 @@
         @media (width <=900px) {
             height: 15rem;
         }
+
+        @media (width <=500px) {
+            height: 10rem;
+        }
     }
 
     .hero-title {
