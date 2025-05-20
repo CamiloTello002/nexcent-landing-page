@@ -4,7 +4,13 @@
 		margin-inline: auto;
 		display: flex;
 		flex-direction: column;
-		gap: 2rem;
+		gap: 6rem;
+		margin-block: 4rem;
+
+		@media (width <=500px) {
+			gap: 4rem;
+			margin-block: 2rem;
+		}
 	}
 
 	.clients {
