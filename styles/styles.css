@@ -5,6 +5,7 @@
 @import url('./hero.css');
 @import url('./features.css');
 @import url('./stats.css');
+@import url('./how-to.css');
 
 @layer reset {
 

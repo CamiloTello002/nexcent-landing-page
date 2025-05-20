@@ -1,0 +1,64 @@
+@layer layouts {
+	.how-to {
+		max-width: var(--maximum-width);
+		margin-inline: auto;
+		display: flex;
+		gap: 5rem;
+		align-items: center;
+		margin-block: 3rem;
+		padding-inline: 3rem;
+
+		@media (width <=900px) {
+			flex-direction: column;
+		}
+	}
+
+	.how-to-content {
+		display: flex;
+		flex-direction: column;
+		gap: 1.5rem;
+	}
+}
+
+@layer components {
+	.how-to-picture {
+		height: 28rem;
+
+		@media (width <=1000px) {
+			height: 20rem;
+		}
+
+		@media (width <=500px) {
+			height: 15rem;
+		}
+	}
+
+	.how-to-title {
+		font-size: 3rem;
+		color: var(--dark-grey);
+		font-weight: 600;
+
+		@media (width <=1000px) {
+			font-size: 2.5rem;
+			line-height: 1.2;
+		}
+
+		@media (width <=900px) {
+			text-align: center;
+		}
+
+		@media (width <=500px) {
+			font-size: 2rem;
+		}
+	}
+
+	.how-to-text {
+		color: var(--grey);
+	}
+
+	.btn {
+		@media (width <=900px) {
+			margin-inline: auto;
+		}
+	}
+}
