@@ -39,6 +39,42 @@
 		gap: 1rem;
 		width: 100%;
 	}
+
+	.experience {
+		display: flex;
+		gap: 2rem;
+		align-items: center;
+		padding-inline: 2rem;
+
+		@media (width <=900px) {
+			flex-direction: column;
+		}
+	}
+
+	.experience-content {
+		display: flex;
+		flex-direction: column;
+		gap: 1.5rem;
+
+		h2 {
+			font-size: 2.5rem;
+			color: var(--dark-grey);
+			line-height: 1;
+			font-weight: 600;
+
+			@media (width <=1000px) {
+				font-size: 2rem;
+			}
+
+			@media (width <=900px) {
+				text-align: center;
+			}
+		}
+
+		p {
+			color: var(--grey);
+		}
+	}
 }
 
 @layer components {
@@ -94,5 +130,17 @@
 
 	.target-audience-text {
 		color: var(--grey);
+	}
+
+	.experience-image {
+		height: 20rem;
+
+		@media (width <=1000px) {
+			height: 17rem;
+		}
+
+		@media (width <=500px) {
+			height: 12rem;
+		}
 	}
 }
