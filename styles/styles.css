@@ -8,6 +8,7 @@
 @import url('./how-to.css');
 @import url('./customers.css');
 @import url('./marketing.css');
+@import url('./footer.css');
 
 @layer reset {
 
@@ -85,6 +86,27 @@
 		overflow-x: hidden;
 		color: var(--black);
 		--maximum-width: 1500px;
+	}
+}
+
+@layer layouts {
+	.demo {
+		background-color: var(--silver);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding-block: 2rem;
+		gap: 3rem;
+
+		.demo-title {
+			color: var(--black);
+			font-weight: 700;
+			font-size: 5rem;
+			width: 50%;
+			text-align: center;
+			line-height: 1.2;
+		}
 	}
 }
 
